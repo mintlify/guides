@@ -1,55 +1,74 @@
 ---
-title: 'Organizing Navigation'
-description: 'Guidelines for information hierarchy'
+title: "Organize navigation"
+description: "Structure content for humans and AI agents"
 ---
 
-This article covers why and how to organize your information hierarchy in a way that makes sense for your users. 
+<Tip>
+  In this article, you'll learn how to organize your documentation's information hierarchy to serve both human readers and AI agents retrieving content on their behalf.
+</Tip>
 
-## Why is navigation important?
+## Why organization matters
 
-Navigation might seem unimportant because experienced users looking for specific answers will typically use your docs search bar.
+Navigation might seem unimportant because users will typically use your site's search bar or enter from a search engine. But the structure of your documentation plays many critical roles in how users understand your product.
 
-But for newer users and prospects, your documentation information hierarchy serves as a mental model for how to think about your product. Navigation thus serves as a critical selling point by helping people quickly grasp what you offer. 
+The information hierarchy of your documentation site helps people build a mental model of how your product works. Well-structured navigation helps humans and AI agents traverse your documentation and find answers quickly.
 
 > Your navigation is like a subway map. It tells you how the whole system hangs together, which is crucial for users evaluating your product.
-> 
+>
 > \- **CT Smith, Head of Docs at Payabli**
+
+If your documentation is difficult to navigate, people will leave before finding what they're looking for and AI agents will provide poor answers. Even when your documentation contains the right content, users might never find it.
+
+## Principles for clear structure
+
+These principles benefit both human readers and AI agents retrieving your content.
+
+**Use clear, descriptive headings**: Headings should accurately describe the content that follows. Avoid vague or clever headings.
+
+**Make pages self-contained**: Each page should provide enough context to be understood independently. Users could start reading from any page, so they might not have any context. And AI tools can't infer or rely on prior knowledge.
+
+**Use semantic markup correctly**: Use heading levels hierarchically (H2, H3, H4). Use lists for lists, tables for tabular data, and code blocks for code. Semantic HTML helps both accessibility tools and AI understand the relationship between different pieces of content.
+
+**Organize content logically**: Related information should be grouped together. If you're explaining a concept, provide the definition before diving into edge cases. If you're documenting a feature, cover the common use case before advanced scenarios.
+
+**Use consistent terminology**: Pick one term for each concept and use it consistently throughout your documentation. If you call something an "API key" in one place, don't call it an "access token" elsewhere unless they're genuinely different things.
+
+**Write descriptive titles and descriptions**: Page titles and meta descriptions should clearly indicate what the page covers. This helps both search systems and AI agents determine if a page is relevant to a user's question.
 
 ## Map the foundation with stakeholders
 
-Align with key stakeholders like your founders, product managers, or engineering leads on how your product works, what’s most important, and how users should interact with it. 
+Align with key stakeholders like your founders, product managers, or engineering leads on how your product works, what's most important, and how users should interact with it. 
 
 Example questions to ask: 
 
-- What’s the simplest way to explain how the product works?
-- What are the product’s core building blocks?
+- What is the simplest way to explain how the product works?
+- What are the product's core features?
 - How do users typically adopt the product? Where do people most often get stuck?
-- How does the product’s architecture influence how people use it?
+- How does the product's architecture influence how people use it?
 - What are the most important integrations or dependencies?
 - What is changing or evolving in the product?
-- If the product was broken into different “layers,” what would they be? e.g. beginner vs advanced, or feature set, or product line
+- How do people conceptualize the product? By features, by use cases, by technical details, or something else?
 
-After mapping the structure, if you have uncertainty about whether this hierarchy makes logical sense, describe your reasoning and ask an LLM to find gaps. Use the prompt “How would you organize this for maximum understanding?”
+After mapping the structure, create an information hierarchy that aligns to the structure. If you're uncertain about how to organize your content, try asking an LLM to organize the content for maximum understanding of the structure that you've mapped.
 
 ## Validate your assumptions
 
-Once you’ve established a structure, you need to validate whether it actually works for real users. The way people navigate your documentation often reveals gaps in your information architecture that internal teams might overlook.
+Once you've established a structure, you should validate whether it actually works for real users. The way people navigate your documentation often reveals gaps in your information architecture that teams might overlook.
 
-### **Track real user journeys**
+### Track real user journeys
 
-Use tools like session replays (e.g. [FullStory](https://www.fullstory.com), [Hotjar](https://www.hotjar.com)) or analytics (e.g. [Mixpanel](https://mixpanel.com)) to study how users move through your docs. Pay attention to:
+Use analytics and session replay tools like [Mixpanel](https://mixpanel.com), [FullStory](https://www.fullstory.com), or [Hotjar](https://www.hotjar.com) to study how users move through your docs.
 
-- **Entry points:** Where do users start their journey? Are they coming from search, a support ticket, or directly from your product?
-- **Navigation patterns:** Do they follow the expected hierarchy, or do they take unexpected detours?
-- **Friction points:** Where do users pause, loop back, or abandon their session? These could indicate unclear organization or missing content.
-- **Search behavior:** Are users searching for terms that don’t exist in your documentation? This might highlight gaps in your content or misalignment in terminology.
+- **Entry points**: Where do users start their journey? Are they coming from search, a support ticket, or directly from your product?
+- **Navigation patterns**: Do they follow the expected hierarchy, or do they take unexpected detours?
+- **Friction points**: Where do users pause, loop back, or abandon their session?
+- **Search behavior**: Are users searching for terms that don't exist in your documentation? This might highlight gaps in your content or misalignment in terminology.
 
-
-> If you're able to hop on a call and ask users, 'Show me how you find answers,' you might be surprised. They're often using documentation in ways you don't understand.
+> If you're able to hop on a call and ask users, "Show me how you find answers," you might be surprised. They're often using documentation in ways you don't understand.
 > 
 > \- **Sarah Edwards, Documentation Engineer at Datastax**
 
-### **Test with real users—including your own team**
+### Test with users and your team
 
 Analytics help surface trends, but direct conversations provide deeper insights. 
 
@@ -59,24 +78,26 @@ New hires are also a great proxy for fresh users. Before they get too familiar w
 
 Have them outline in detail how they approached it—where they clicked first, how they interpreted section names, and where they got stuck. Since they lack prior context, their instincts can reveal whether your docs are intuitive or if they assume too much knowledge.
 
-## **Identify common pitfalls**
+## Identify common pitfalls
 
 Based on your observations, look for these common navigation issues:
 
-- **Overloaded categories:** Too many top-level sections can overwhelm users. Consider grouping related topics together.
-- **Hidden essential content:** Don’t bury critical information. Prioritize frequently accessed content.
-- **Unclear section names:** If users hesitate before clicking, your labels might not be intuitive. Align terminology with how your audience naturally thinks.
+- **Overloaded categories**: Too many top-level sections can overwhelm users. Consider grouping related topics together.
+- **Hidden essential content**: Don't bury critical information. Prioritize frequently accessed content.
+- **Unclear section names**: If users hesitate before clicking, your labels might not be intuitive. Align terminology with how your audience naturally thinks.
+- **Inconsistent terminology**: Using different terms for the same concept confuses both humans and AI. Pick one term and stick with it.
+- **Outdated content**: Keep documentation current. Mark deprecated features clearly and remove obsolete information. AI agents may retrieve old content if it's still present.
 
-Try to avoid egregious issues but remember, it’s hard to make documentation organization work for everyone.
+Try to avoid egregious issues but remember, it's hard to make documentation organization work for everyone.
 
-“Creating a nav structure that makes sense to everyone can be difficult, but try to find something that works for a majority of customers.” —Brody Klapko, Technical Writer at Stash
+> Creating a nav structure that makes sense to everyone can be difficult, but try to find something that works for a majority of customers.
+>
+> \- **Brody Klapko, Technical Writer at Stash**
 
 ## Iterate over time
 
 Above all, stay flexible. Your navigation should evolve with your product and user needs. 
 
-
 > You don't have to be right on the first try. Use all available tools and perspectives to inform your decisions, but be ready to adjust based on how users actually interact with your documentation.
 > 
 > \- **Ethan Palm, Senior Manager of Docs at Github**
-
