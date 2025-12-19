@@ -1,10 +1,10 @@
 ---
-title: 'Maintenance'
-description: 'Tips for keeping docs up-to-date'
+title: "Maintenance"
+description: "Tips for keeping docs up-to-date"
 ---
 
 <Tip>
-  This article covers strategies for keeping your documentation accurate and valuable over time, from automated checks to content lifecycles.
+  In this article, you'll learn strategies for keeping your documentation accurate and valuable over time, from automated checks to content lifecycles.
 </Tip>
 
 <img
@@ -13,34 +13,35 @@ description: 'Tips for keeping docs up-to-date'
   noZoom
 />
 
-### **Automate what you can**
+## Automate what you can
 
 Documentation rot happens when you rely too much on manual effort to update content. 
 
 Try to introduce automations where you can, such as:
 
-- **Track stale content:** Run a script to flag important docs that haven’t been updated in X days.
-- **Detect product changes:** If your documentation relies on artifacts from engineering (e.g., OpenAPI specs), set up a job to detect when key objects change and notify the team. Or, use a documentation provider that [auto-generates APIs](https://mintlify.com/docs/api-playground/openapi/setup#openapi-setup) and automatically updates.
-- **Enforce standards with linters:** Use [Vale.sh](http://Vale.sh) or [a documentation provider](https://mintlify.com/docs/settings/ci) to automatically catch formatting issues, writing style deviations, or missing metadata on every pull request.
+- **Track stale content**: Run a script to flag important docs that haven't been updated in X days.
+- **Detect product changes**: If your documentation relies on artifacts from engineering like OpenAPI specs, set up a job to detect when key objects change and notify the team. Or, use a documentation provider that [auto-generates APIs](https://mintlify.com/docs/api-playground/openapi/setup#openapi-setup) and automatically updates.
+- **Enforce standards with linters**: Use [Vale.sh](http://Vale.sh) or [a documentation provider](https://mintlify.com/docs/settings/ci) to automatically catch formatting issues, writing style deviations, or missing metadata on every pull request.
+- **Use AI to maintain documentation**: AI tools can help identify outdated content, suggest improvements, and keep documentation current with less manual effort. For example, the Mintlify [agent](https://www.mintlify.com/docs/ai/agent) automatically detects when documentation becomes stale based on product changes, and [suggestions](https://www.mintlify.com/docs/ai/suggestions) recommend updates to keep content accurate and comprehensive. These tools work continuously in the background, flagging issues that would otherwise require manual review cycles.
 
-### **Set up realistic review processes**
+## Set up realistic review processes
 
-Documentation will never be perfect, and that’s okay. You should have a threshold of acceptance—a level where docs are functional and useful. 
+Documentation will never be perfect, and that's okay. You should have a threshold of acceptance. A level where docs are functional and useful. 
 
-Instead of aiming for 100%, balance efficiency with quality:
+Instead of aiming for 100%, balance efficiency with quality.
 
-- **Trigger reviews based on relevance, not just time.** Rather than setting periodic updates, prioritize content based on usage, search demand, or product changes.
-- **Focus on high-impact docs.** Not every page needs regular updates, but the 10 most viewed pages for users should get extra attention.
-- **Lean on your community.** If your docs are open-source, empower users to flag issues or submit fixes via pull requests—it builds trust and keeps content fresh. Incorporate feedback mechanisms in your docs when you can.
+- **Trigger reviews based on relevance, not just time**: Rather than setting periodic updates, prioritize content based on usage, search demand, or product changes.
+- **Focus on high-impact docs**: Not every page needs regular updates, but the 10 most viewed pages for users should get extra attention.
+- **Lean on your community**: If your docs are open-source, empower users to flag issues or submit fixes via pull requests—it builds trust and keeps content fresh. Incorporate feedback mechanisms in your docs when you can.
 
-### Know when to rewrite
+## Know when to rewrite
 
-Over time, documentation naturally accumulates caveats and workarounds, leading to “spaghetti docs.” When incremental fixes create more confusion than clarity, a full overhaul may be the best option.
+Over time, documentation naturally accumulates caveats and workarounds, leading to "spaghetti docs." When incremental fixes create more confusion than clarity, a full overhaul may be the best option.
 
-- **Plan for periodic resets.** Every 1-2 years, consider a major cleanup, especially if best practices or the product itself has evolved significantly.
-- **Start with a structured audit.** Interview support teams, analyze user feedback, and document what’s missing, misleading, or redundant before rewriting.
-- **Tackle rewrites in focused sprints.** A full overhaul doesn’t have to happen all at once—prioritize sections with the biggest impact.
+- **Plan for periodic resets**: Every 1-2 years, consider a major cleanup, especially if best practices or the product itself has evolved significantly.
+- **Start with a structured audit**: Interview support teams, analyze user feedback, and document what's missing, misleading, or redundant before rewriting.
+- **Tackle rewrites in focused sprints**: A full overhaul doesn't have to happen all at once. Prioritize sections with the biggest impact.
 
-### **Wrong docs can be worse than no docs**
+## Wrong docs can be worse than no docs
 
-Outdated or misleading documentation wastes users’ time and erodes trust. In cases where a doc is completely inaccurate and unfixable in the short term, it’s often better to remove it entirely. Users will appreciate having less information over having wrong information.
+Outdated or misleading documentation wastes users' time and erodes trust. In cases where a doc is completely inaccurate and unfixable in the short term, it's often better to remove it entirely. Users will appreciate having less information over having wrong information.
