@@ -16,3 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 .prose :where(img):not(:where([class~=not-prose],[class~=not-prose] *)) {
   margin-top: 0;
 }
+
+.dark .chat-assistant-floating-input::before {
+  background: rgb(var(--gray-900));
+}
