@@ -72,7 +72,7 @@
   },
   "seo": {
     "metatags": {
-      "og:image": "images/ogimage"
+      "og:image": "images/ogimage.png"
     }
   }
 }
